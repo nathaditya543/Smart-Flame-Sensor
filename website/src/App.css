@@ -1,0 +1,9 @@
+.Background{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(122,0,214);
+  background: linear-gradient(0deg, rgba(122,0,214,1) 0%, rgba(93,58,221,1) 68%, rgba(0,158,228,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,22 @@
+.MainGrid{
+    width: 260px;
+    height: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+
+    gap: 10px;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+.Cell{
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);
+  }
