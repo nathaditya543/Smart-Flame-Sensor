@@ -1,9 +1,37 @@
 .Background{
   width: 100vw;
   height: 100vh;
-  background: rgb(122,0,214);
   background: linear-gradient(0deg, rgba(122,0,214,1) 0%, rgba(93,58,221,1) 68%, rgba(0,158,228,1) 100%);
+  /* background: rgb(87, 87, 87); */
+}
+
+.Items{
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.Header{
+  color: whitesmoke;
+  background-color: rgba(255,255,255,0.3);
+  font-size: x-large;
+  padding: 5px;
+}
+.DropDown{
+  background: rgba(255,255,255,0.5);
+  padding:5px;
+  border-radius:10px
+}
+
+@media only screen and (max-width: 600px){
+  .Items{
+    flex-direction: column;
+  }
+  .DropDown{
+    scale: 0.8;
+  }
+  .Header{
+    padding: 10px;
+    font-size: larger;
+  }
 }

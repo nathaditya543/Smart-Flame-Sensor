@@ -1,22 +1,44 @@
 .MainGrid{
-    width: 260px;
-    height: 260px;
-    padding: 15px;
-    border-radius: 10px;
-    display: grid;
+  width: 290px;
+  height: 290px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  display: grid;
 
-    gap: 10px;
-    grid-template-columns: 80px 80px 80px;
-    grid-template-rows: 80px 80px 80px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+  gap: 10px;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
   
 .Cell{
-    width: 80px;
-    height: 80px;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255,255,255,0.3);
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+  border: 2px solid black
   }
+  
+.normal{
+  background-color: rgba(255,255,255,0.3);
+}
+
+.path{
+  background-color: rgb(6, 196, 6);
+}
+
+.fire{
+  background-color: red;
+}
+
+@media only screen and (max-width: 600px){
+  .MainGrid{
+    scale: 0.8;
+    margin: 5px;
+  }
+
+}
