@@ -1,5 +1,5 @@
 const graph = [[0,1,0,1,0,0,0,0,0],[1,0,1,0,1,0,0,0,0],[0,1,0,0,0,1,0,0,0],[1,0,0,0,1,0,1,0,0],[0,1,0,1,0,1,0,1,0],[0,0,1,0,1,0,0,0,1],[0,0,0,1,0,0,0,1,0],[0,0,0,0,1,0,1,0,1],[0,0,0,0,0,1,0,1,0]];
-var msg = {"Val2":1,"Val3":1,"Val4":1,"Val5":1,"Val6":1,"Val7":1,"Val8":1,"Val9":1,"Val10":1};
+var msg = {"Val2":1,"Val3":1,"Val4":1,"Val5":1,"Val6":1,"Val7":0,"Val8":1,"Val9":1,"Val10":1};
 var ctr = 0;
 for(const[key,value] of Object.entries(msg)){
     if(value == 0){
@@ -10,12 +10,12 @@ for(const[key,value] of Object.entries(msg)){
 }
 // console.log(graph);
 
-var src = 4;
+var src = 8;
 var dest = 0;
 var dist = Array(9).fill(Number.MAX_VALUE);
 var path = Array(9).fill(-1);
 dist[src] = 0;
-path[src] = 0;
+path[src] = src;
 
 for(let i = 0; i < 8; i++){
     for(let j = 0; j < 9; j++){

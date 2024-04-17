@@ -50,7 +50,7 @@ function App() {
         var msg = vals;
         var ctr = 0;
         for(const[,value] of Object.entries(msg)){
-          if(value === 0){
+          if(value === 0 && ctr !== src){
             temp[ctr] = "fire"
             for(let i = 0; i < 9; i++)
                 graph[i][ctr] = 0;
