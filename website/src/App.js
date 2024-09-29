@@ -104,7 +104,6 @@ function App() {
    }
 
 
-
   var options={
     clientId: 'mqttjs_nathaditya',
     username: "nathaditya",
